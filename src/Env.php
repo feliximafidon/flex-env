@@ -67,9 +67,15 @@ class Env
     {
         $oldValue = $this->get($key);
 
-        if (! preg_match('/\d/', $value) || preg_match('/=/', $value)) {
-            $value = "\"$value\"";
-        }
+        if ( false
+            //|| preg_match('/\d/', $value)
+            || (strpos($value, " ") !== false)
+            || (strpos($value, "=") !== false)
+            || (substr($value, 0, 2) == '${')
+            //is_numeric($value)
+
+                //!in_array($value, ["false", "true"])
+        ) $value = "\"$value\"";
 
         $new = $linebreak ? "\n$key=$value" : "$key=$value";
 

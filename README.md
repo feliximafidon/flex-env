@@ -73,6 +73,7 @@ All changes you made should now be reflected in your `.env` file.
 
 ## Inspiration
 Inspiration for this package came from [LeShadow's ArtisanExtended](https://github.com/LeShadow/ArtisanExtended).
+Original code was taken from [sven/flex-env](https://github.com/svenluijten/flex-env)
 
 ## Contributing
 All contributions (pull requests, issues and feature requests) are
@@ -83,17 +84,17 @@ though. See the [contributors page](../../graphs/contributors) for all contribut
 `feliximafidon/flex-env` is licensed under the MIT License (MIT). See the [license file](LICENSE.md)
 for more information.
 
-[ico-version]: https://img.shields.io/packagist/v/sven/flex-env.svg?style=flat-square
+[ico-version]: https://img.shields.io/packagist/v/feliximafidon/flex-env.svg?style=flat-square
 [ico-license]: https://img.shields.io/badge/license-MIT-green.svg?style=flat-square
-[ico-downloads]: https://img.shields.io/packagist/dt/sven/flex-env.svg?style=flat-square
-[ico-travis]: https://img.shields.io/travis/svenluijten/flex-env.svg?style=flat-square
-[ico-codeclimate]: https://img.shields.io/codeclimate/github/svenluijten/flex-env.svg?style=flat-square
-[ico-quality]: https://img.shields.io/scrutinizer/g/svenluijten/flex-env.svg?style=flat-square
+[ico-downloads]: https://img.shields.io/packagist/dt/feliximafidon/flex-env.svg?style=flat-square
+[ico-travis]: https://img.shields.io/travis/feliximafidonluijten/flex-env.svg?style=flat-square
+[ico-codeclimate]: https://img.shields.io/codeclimate/github/feliximafidonluijten/flex-env.svg?style=flat-square
+[ico-quality]: https://img.shields.io/scrutinizer/g/feliximafidonluijten/flex-env.svg?style=flat-square
 [ico-styleci]: https://styleci.io/repos/49644781/shield
 
-[link-packagist]: https://packagist.org/packages/sven/flex-env
-[link-downloads]: https://packagist.org/packages/sven/flex-env
-[link-travis]: https://travis-ci.org/svenluijten/flex-env
-[link-codeclimate]: https://codeclimate.com/github/svenluijten/flex-env
-[link-quality]: https://scrutinizer-ci.com/g/svenluijten/flex-env/?branch=master
+[link-packagist]: https://packagist.org/packages/feliximafidon/flex-env
+[link-downloads]: https://packagist.org/packages/feliximafidon/flex-env
+[link-travis]: https://travis-ci.org/feliximafidonluijten/flex-env
+[link-codeclimate]: https://codeclimate.com/github/feliximafidonluijten/flex-env
+[link-quality]: https://scrutinizer-ci.com/g/feliximafidonluijten/flex-env/?branch=master
 [link-styleci]: https://styleci.io/repos/49644781
