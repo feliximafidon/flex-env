@@ -70,11 +70,9 @@ class Env
         if ( false
             //|| preg_match('/\d/', $value)
             || (strpos($value, " ") !== false)
-            || (strpos($value, "=") !== false)
-            || (substr($value, 0, 2) == '${')
-            //is_numeric($value)
-
-                //!in_array($value, ["false", "true"])
+            || (($pos = (strpos($value, "=")) !== false) && ($pos != strlen($value) - 1))
+            || (strpos($value, "$") !== false)
+            || (strpos($value, "\\") !== false)
         ) $value = "\"$value\"";
 
         $new = $linebreak ? "\n$key=$value" : "$key=$value";
