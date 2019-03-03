@@ -38,12 +38,12 @@ class SetEnv extends Command
 
         $result = $env->set($key, $value, $linebreak)->get($key);
 
+        return $this->comment("0");
+
         if (!in_array($result, [$value, "\"$value\""])) {
             $env->rollback();
 
             return $this->error('Could not set the value in your .env file, reverting...');
         }
-
-        return $this->comment("0");
     }
 }
