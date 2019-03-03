@@ -164,18 +164,23 @@ class Env
     private function parseFile()
     {
         $contents = file_get_contents($this->getPath());
-        $lines = new Collection(explode("\n", $contents));
+        $lines = new Collection(explode("\n", str_replace(["\r\n", "\r"], "\n" ,$contents)));
         $result = new Collection();
 
         $lines->filter(function ($value) {
             return $value;
         })->each(function ($value) use ($result) {
-            preg_match('/([a-zA-Z_-]+)\=(.+)/', $value, $regexResult);
+            //$line = explode('=', $value, 2);
+            preg_match('/([a-zA-Z_-]+)\=(.+)?/', $value, $line);
 
-            array_shift($regexResult);
-            $result->push(new Collection($regexResult));
+            array_shift($line);
+            if (count($line) < 2) {
+                /* Applicable where a value is not set for the key */
+                $line[1] = '';
+             }
+            $result->push(new Collection($line));
         });
-
+        
         return $result;
     }
 
